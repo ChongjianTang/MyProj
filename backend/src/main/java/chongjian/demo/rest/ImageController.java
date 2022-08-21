@@ -40,7 +40,7 @@ import com.microsoft.azure.cognitiveservices.vision.customvision.training.models
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8000")
+@CrossOrigin(origins = "${FRONTEND_HOST:http://localhost:8000}")
 public class ImageController {
 
     @PostMapping("/images")

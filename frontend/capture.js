@@ -101,7 +101,7 @@ function takePicture() {
 }
 
 function postImage(data) {
-    fetch('http://localhost:8080/images', {
+    fetch('https://myfacebackend.azurewebsites.net/images', {
         method: "POST",
         body: data
     }).then(result => {
